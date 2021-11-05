@@ -12,13 +12,16 @@
                 {
                     "name": "Get Account Info",
                     "id": "20d2902c-55b8-4841-85a9-0255d72f7375",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -180,13 +183,16 @@
                 {
                     "name": "List Backups",
                     "id": "a125cdb6-1950-4e86-8a5c-40576816c33e",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -426,13 +432,16 @@
                 {
                     "name": "Get a Backup",
                     "id": "1965e292-6e1f-4b87-b0a2-ca2245301f9f",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -644,13 +653,16 @@
                 {
                     "name": "List Bare Metal Instances",
                     "id": "54a67469-2b65-4de1-aa20-08dee6ade7d7",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -868,13 +880,16 @@
                 {
                     "name": "Create Bare Metal Instance",
                     "id": "5c56f064-58f6-4a92-89ac-85aee7d04d5f",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -1132,13 +1147,16 @@
                 {
                     "name": "Get Bare Metal",
                     "id": "6031f32a-59e1-452a-8176-8bde75588e74",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -1343,13 +1361,16 @@
                 {
                     "name": "Update Bare Metal",
                     "id": "bd7b249b-f970-461c-af39-ac58900cc385",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -1604,13 +1625,16 @@
                 {
                     "name": "Delete Bare Metal",
                     "id": "2e90b0f0-069b-46ec-9b3e-e1261fb7b23c",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -1815,13 +1839,16 @@
                 {
                     "name": "Bare Metal IPv4 Addresses",
                     "id": "a76b1a54-8152-46ca-86db-e25ac048aeb5",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -2031,13 +2058,16 @@
                 {
                     "name": "Bare Metal IPv6 Addresses",
                     "id": "dd601ef3-03cd-4076-b5bd-9d4e47d0e5fb",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -2247,13 +2277,16 @@
                 {
                     "name": "Start Bare Metal",
                     "id": "f60961ec-2758-4ab9-a030-57223a20bedb",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -2463,13 +2496,16 @@
                 {
                     "name": "Reboot Bare Metal",
                     "id": "4991af54-ac56-4bc8-9e89-d5497313df77",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -2679,13 +2715,16 @@
                 {
                     "name": "Reinstall Bare Metal",
                     "id": "d8bfc7d6-693a-4de6-a76b-d63c08fc59e2",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -2895,13 +2934,16 @@
                 {
                     "name": "Halt Bare Metal",
                     "id": "d5c8a6d0-b4d2-45a0-8b2d-b3340c120a56",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -3111,13 +3153,16 @@
                 {
                     "name": "Bare Metal Bandwidth",
                     "id": "f898b67c-239b-4137-b8a6-d4bdb1ee2064",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -3327,13 +3372,16 @@
                 {
                     "name": "Halt Bare Metals",
                     "id": "c16bbc95-d916-4f34-8314-6f2d5426e77b",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -3552,13 +3600,16 @@
                 {
                     "name": "Reboot Bare Metals",
                     "id": "1d7e33f7-e8a6-4552-b5f4-5083aa4835ad",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -3777,13 +3828,16 @@
                 {
                     "name": "Start Bare Metals",
                     "id": "bbf8a3cb-bed4-4608-8633-5ed61b218767",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -4002,13 +4056,16 @@
                 {
                     "name": "Get Bare Metal User Data",
                     "id": "adc3ba30-3478-40f6-82cf-9337411ba287",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -4218,13 +4275,16 @@
                 {
                     "name": "Get Available Bare Metal Upgrades",
                     "id": "9d82d718-37d3-434a-8056-42b87069a988",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -4516,13 +4576,16 @@
                 {
                     "name": "Get VNC URL for a Bare Metal",
                     "id": "61739761-c292-44a6-b5ee-ebb18a6e48f3",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -4783,13 +4846,16 @@
                 {
                     "name": "List Block storages",
                     "id": "81840685-5005-4c24-8066-71b669252a9d",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -5007,13 +5073,16 @@
                 {
                     "name": "Create Block Storage",
                     "id": "7da49250-3f4f-42c8-8b24-2e444d1617ad",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -5271,13 +5340,16 @@
                 {
                     "name": "Get Block Storage",
                     "id": "0b5cca51-734d-4bbd-865d-4931316b89fd",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -5482,13 +5554,16 @@
                 {
                     "name": "Delete Block Storage",
                     "id": "e8e68890-ccf9-4818-9090-d79cbea99003",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -5693,13 +5768,16 @@
                 {
                     "name": "Update Block Storage",
                     "id": "e9151fb5-b256-4a52-bd8e-fc38a876a974",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -6006,13 +6084,16 @@
                 {
                     "name": "Attach Block Storage",
                     "id": "9385f1d8-b99f-420b-9aaa-3aca602b90e2",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -6272,13 +6353,16 @@
                 {
                     "name": "Detach Block Storage",
                     "id": "04afa089-3671-4e20-b14e-2b91b932454b",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -6545,13 +6629,16 @@
                 {
                     "name": "List DNS Domains",
                     "id": "20aea768-5dfa-485e-872e-065a887cae4c",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -6814,13 +6901,16 @@
                 {
                     "name": "Create DNS Domain",
                     "id": "5b5a1e94-6f33-47b8-9db4-ef2b2219a837",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -6902,13 +6992,16 @@
                 {
                     "name": "Get DNS Domain",
                     "id": "caca78d5-8207-45f9-ab94-3f24f18c5a0e",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -7156,13 +7249,16 @@
                 {
                     "name": "Delete Domain",
                     "id": "dcf0e830-74d2-4dc4-8b14-394d4b3500ac",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -7670,13 +7766,16 @@
                 {
                     "name": "Get SOA information",
                     "id": "83a7bf52-05ee-4917-bda4-0d58dfebb167",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -7886,13 +7985,16 @@
                 {
                     "name": "Update SOA information",
                     "id": "d112f020-8daa-47a5-93d6-7e6732a0d477",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -8205,13 +8307,16 @@
                 {
                     "name": "Get DNSSec Info",
                     "id": "0dc739c4-188c-4266-929e-c282a518f401",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -8421,13 +8526,16 @@
                 {
                     "name": "Create Record",
                     "id": "16f485b6-7c6b-43fb-b7c1-0d5862b9cebc",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -8740,13 +8848,16 @@
                 {
                     "name": "List Records",
                     "id": "90e16808-0521-40c7-b021-a822afc6d774",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -9010,13 +9121,16 @@
                 {
                     "name": "Get Record",
                     "id": "1ab2216a-02a5-45c5-b4a6-bc2a63a4fa7e",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -9257,13 +9371,16 @@
                 {
                     "name": "Update Record",
                     "id": "79b674f8-7cbb-4bc4-a4ec-a02a2106ca89",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -9377,13 +9494,16 @@
                 {
                     "name": "Delete Record",
                     "id": "3dd4fb5c-5a82-4289-a449-5766ef15e33b",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -9631,13 +9751,16 @@
                 {
                     "name": "List Firewall Groups",
                     "id": "c65ff216-79b0-44bf-8402-5e1693fbb43a",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -9765,13 +9888,16 @@
                 {
                     "name": "Create Firewall Group",
                     "id": "48831ad4-c5d3-4504-88e3-e135cbd71ee0",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -9985,13 +10111,16 @@
                 {
                     "name": "Get Firewall Group",
                     "id": "ef453c99-b865-4ba1-aba7-54be3970bedd",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -10239,13 +10368,16 @@
                 {
                     "name": "Update Firewall Group",
                     "id": "a6b7ca44-7c00-4568-a374-74d6af1281c5",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -10500,13 +10632,16 @@
                 {
                     "name": "Delete Firewall Group",
                     "id": "e96a257c-de7c-4d20-8881-c99b5e7ec704",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -10711,13 +10846,16 @@
                 {
                     "name": "List Firewall Rules",
                     "id": "cbc93108-8095-4380-93ec-f67a1d5a37fc",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -10981,13 +11119,16 @@
                 {
                     "name": "Create Firewall Rules",
                     "id": "7bb38fbd-f571-449f-9460-c95a63b2c772",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -11247,13 +11388,16 @@
                 {
                     "name": "Delete Firewall Rule",
                     "id": "3726dacc-4a6f-442f-8463-1875723384c3",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -11494,13 +11638,16 @@
                 {
                     "name": "Get Firewall Rule",
                     "id": "0d6339e6-ecd4-416e-a150-3a4afec475f9",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -11748,13 +11895,16 @@
                 {
                     "name": "List Instances",
                     "id": "26a23aba-f053-4799-9edd-d6137d8f463a",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -12095,13 +12245,16 @@
                 {
                     "name": "Create Instance",
                     "id": "19275c62-4572-4021-9b22-989ee28ef510",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -12359,13 +12512,16 @@
                 {
                     "name": "Get Instance",
                     "id": "9f1a9e80-071c-43fa-b64c-8ac259f63aef",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -12613,13 +12769,16 @@
                 {
                     "name": "Update Instance",
                     "id": "85c5c6af-554d-42c7-953a-99db20a6597f",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -12874,13 +13033,16 @@
                 {
                     "name": "Delete Instance",
                     "id": "05d5d166-128c-4fdf-a658-59705fd0024e",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -13085,13 +13247,16 @@
                 {
                     "name": "Halt Instances",
                     "id": "6dcf1452-7d30-45eb-b8f6-8e0bc4913a49",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -13310,13 +13475,16 @@
                 {
                     "name": "Reboot instances",
                     "id": "06f5b534-491d-421b-9092-46c0caecb486",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -13535,13 +13703,16 @@
                 {
                     "name": "Start instances",
                     "id": "a2304d56-d4e1-49e9-b812-07b2e271a10d",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -13760,13 +13931,16 @@
                 {
                     "name": "Start instance",
                     "id": "37fd7716-f622-44b8-bcc0-af4af2c58aa6",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -13976,13 +14150,16 @@
                 {
                     "name": "Reboot Instance",
                     "id": "17c2c54d-b769-4f04-a790-3f908ca3d705",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -14192,13 +14369,16 @@
                 {
                     "name": "Reinstall Instance",
                     "id": "e880e7c6-31ff-4749-90be-88987baf51db",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -14458,13 +14638,16 @@
                 {
                     "name": "Instance Bandwidth",
                     "id": "f35cc4a0-8443-49a2-80f8-f2162ccd0bf9",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -14674,13 +14857,16 @@
                 {
                     "name": "Get Instance neighbors",
                     "id": "8f3e3e63-2602-4808-8d8f-aec370be0cab",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -14890,13 +15076,16 @@
                 {
                     "name": "List instance Private Networks",
                     "id": "2a032853-ab7a-48dc-b9c0-1ff0141f5057",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -15160,13 +15349,16 @@
                 {
                     "name": "Get Instance ISO Status",
                     "id": "0889ad71-862e-4bf0-b082-5820ebe591b2",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -15376,13 +15568,16 @@
                 {
                     "name": "Attach ISO to Instance",
                     "id": "f01447b2-2747-43fc-b881-a7c9d66a5d49",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -15647,13 +15842,16 @@
                 {
                     "name": "Detach ISO from instance",
                     "id": "ddba6f1c-b59f-496d-a68f-2e8d81fbfc0d",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -15868,13 +16066,16 @@
                 {
                     "name": "Attach Private Network to Instance",
                     "id": "79ef4ff7-657a-4ccf-b4a1-4613935cdbb0",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -16139,13 +16340,16 @@
                 {
                     "name": "Detach Private Network from Instance",
                     "id": "d00a2c93-c7f8-43a7-b021-145e4c37fedb",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -16410,13 +16614,16 @@
                 {
                     "name": "Set Instance Backup Schedule",
                     "id": "2881d185-f8c4-495d-97d4-d0aa244427c9",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -16623,13 +16830,16 @@
                 {
                     "name": "Get Instance Backup Schedule",
                     "id": "4d0f3842-2707-45b1-8afc-4d9fdc9a8df0",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -16839,13 +17049,16 @@
                 {
                     "name": "Restore Instance",
                     "id": "cc57855b-36a8-4fcd-8c9c-c622ae3378c1",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -17105,13 +17318,16 @@
                 {
                     "name": "List Instance IPv4 Information",
                     "id": "dfcc714d-b46e-4874-b479-18f8adff6f40",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -17397,13 +17613,16 @@
                 {
                     "name": "Create IPv4",
                     "id": "907224b6-813c-4b44-a463-86d8df4c48af",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -17663,13 +17882,16 @@
                 {
                     "name": "Get Instance IPv6 Information",
                     "id": "e4584b5c-f95d-48d9-b9b9-a3f2358bea92",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -17879,13 +18101,16 @@
                 {
                     "name": "Create Instance Reverse IPv6",
                     "id": "bcb1f58b-4fe8-4c07-b550-9edec0cb6e1f",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -18150,13 +18375,16 @@
                 {
                     "name": "List Instance IPv6 Reverse",
                     "id": "3bc3793d-f3c3-4d00-a7ec-f9e08891d0a8",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -18236,13 +18464,16 @@
                 {
                     "name": "Create Instance Reverse IPv4",
                     "id": "e512b251-0340-48cd-ae57-a0b439ab9f1a",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -18507,13 +18738,16 @@
                 {
                     "name": "Get Instance User Data",
                     "id": "d83fb45a-8314-44d7-9fe2-c3569ca9a861",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -18591,13 +18825,16 @@
                 {
                     "name": "Halt Instance",
                     "id": "d6a3cc93-11a0-40b6-9841-ec7b53431e3d",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -18807,13 +19044,16 @@
                 {
                     "name": "Set Default Reverse DNS Entry",
                     "id": "32102251-303d-4e8a-a38f-3c0835f1d744",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -19083,13 +19323,16 @@
                 {
                     "name": "Delete IPv4 Address",
                     "id": "afe1ec5c-aa59-4b42-b4af-4a31a25f71fa",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -19330,13 +19573,16 @@
                 {
                     "name": "Delete Instance Reverse IPv6",
                     "id": "ce53f12d-267d-4530-8cdc-cce3cccdc964",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -19582,13 +19828,16 @@
                 {
                     "name": "Get Available Instance Upgrades",
                     "id": "64b03474-0bb0-46c3-bd2d-998ff253a8c4",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -19887,13 +20136,16 @@
                 {
                     "name": "List ISOs",
                     "id": "2790b5f3-b50a-4aa7-b613-ef066c3d3874",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -20111,13 +20363,16 @@
                 {
                     "name": "Create ISO",
                     "id": "43315059-d448-46cd-ba00-5dcafbf52a07",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -20331,13 +20586,16 @@
                 {
                     "name": "Get ISO",
                     "id": "f7e0b4b7-66c8-49d1-870d-0cd486dc7520",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -20542,13 +20800,16 @@
                 {
                     "name": "Delete ISO",
                     "id": "fb27b860-3093-46fc-a783-1954d48decea",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -20885,13 +21146,16 @@
                 {
                     "name": "Create Kubernetes Cluster",
                     "id": "597201e9-986a-4018-9f8b-40af10bb1446",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -21110,13 +21374,16 @@
                 {
                     "name": "List all Kubernetes Clusters",
                     "id": "970cc6f7-2417-4dd7-b195-f47b70f01f30",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -21285,13 +21552,16 @@
                 {
                     "name": "Get Kubernetes Cluster",
                     "id": "9555bb6e-8121-43c9-b3bb-5fb49f382b1e",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -21501,13 +21771,16 @@
                 {
                     "name": "Update Kubernetes Cluster",
                     "id": "8dda91ca-1f66-4b08-8872-201e8d0fac97",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -21767,13 +22040,16 @@
                 {
                     "name": "Delete Kubernetes Cluster",
                     "id": "822ae952-f433-4e4b-98be-b4aa3631469a",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -21983,13 +22259,16 @@
                 {
                     "name": "Delete VKE Cluster and All Related Resources",
                     "id": "a0f7343e-eb79-4f71-ac4f-34e305827048",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -22204,13 +22483,16 @@
                 {
                     "name": "Get Kubernetes Resources",
                     "id": "3f3a6054-7f54-4265-8f65-8b16b511c095",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -22425,13 +22707,16 @@
                 {
                     "name": "Create NodePool",
                     "id": "0db17656-0d5f-4722-895e-1c3a0e4d5b3a",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -22696,13 +22981,16 @@
                 {
                     "name": "List NodePools",
                     "id": "aacbd9b5-e371-4653-b006-426b62e25dcf",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -22917,13 +23205,16 @@
                 {
                     "name": "Get NodePool",
                     "id": "a0e28738-a631-4974-a4cf-cb450a4d1151",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -23169,13 +23460,16 @@
                 {
                     "name": "Update Nodepool",
                     "id": "3b08eb64-f496-48a9-891f-ea566083f647",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -23471,13 +23765,16 @@
                 {
                     "name": "Delete Nodepool",
                     "id": "6da5c068-eb47-49f7-a707-f1b55c7b7a65",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -23723,13 +24020,16 @@
                 {
                     "name": "Delete NodePool Instance",
                     "id": "f1c0501f-604a-4b5c-806c-42338dca0445",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -24011,13 +24311,16 @@
                 {
                     "name": "Recycle a NodePool Instance",
                     "id": "9868d289-70b7-4372-8735-53b671e0932a",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -24304,13 +24607,16 @@
                 {
                     "name": "Get Kubernetes Cluster Kubeconfig",
                     "id": "993fd1a6-e13f-4102-a2f3-3d975c896c43",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -24625,13 +24931,16 @@
                 {
                     "name": "List Load Balancers",
                     "id": "bfc69a02-a6b0-42dc-a41e-158c286c8681",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -24849,13 +25158,16 @@
                 {
                     "name": "Create Load Balancer",
                     "id": "ed2d91a6-d128-48f4-a1ce-694c11a1ee28",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -25113,13 +25425,16 @@
                 {
                     "name": "Get Load Balancer",
                     "id": "32a6addb-081b-4b6a-a07d-ed7b1b0fafc1",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -25324,13 +25639,16 @@
                 {
                     "name": "Update Load Balancer",
                     "id": "34d37d68-91fd-4645-9ad0-8ca1afa1cb97",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -25637,13 +25955,16 @@
                 {
                     "name": "Delete Load Balancer",
                     "id": "cece2194-dd8d-4249-b78f-3f609b03821e",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -25848,13 +26169,16 @@
                 {
                     "name": "List Forwarding Rules",
                     "id": "d0a0bae8-f201-493b-8ef8-55415bfb1987",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -26118,13 +26442,16 @@
                 {
                     "name": "Create Forwarding Rule",
                     "id": "331690b7-cbce-46e9-ba6e-d0655689344b",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -26437,13 +26764,16 @@
                 {
                     "name": "Get Forwarding Rule",
                     "id": "780854f6-d9d0-4f54-8449-6e1e0b77c4ef",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -26684,13 +27014,16 @@
                 {
                     "name": "Delete Forwarding Rule",
                     "id": "6be73214-b6f2-44af-a278-64cffe9299df",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -26931,13 +27264,16 @@
                 {
                     "name": "List Firewall Rules",
                     "id": "1865b589-b424-4657-97d3-d83161913a49",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -27201,13 +27537,16 @@
                 {
                     "name": "Get Firewall Rule",
                     "id": "02988ae4-b874-4fd5-9cbe-79366a910dad",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -27455,13 +27794,16 @@
                 {
                     "name": "List Object Storages",
                     "id": "ef12014a-fe27-479e-8b6e-27ac31c3ea6a",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -27634,13 +27976,16 @@
                 {
                     "name": "Create Object Storage",
                     "id": "68f65731-83b4-4a38-8cc0-44d51a1a5826",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -27854,13 +28199,16 @@
                 {
                     "name": "Get Object Storage",
                     "id": "fe4e2940-9931-4d2c-a9fc-aae323763fc8",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -28065,13 +28413,16 @@
                 {
                     "name": "Delete Object Storage",
                     "id": "1d9f0f2c-a073-4e6a-b19e-a92afd2bc1e3",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -28319,13 +28670,16 @@
                 {
                     "name": "Update Object Storage",
                     "id": "62f99056-9af3-47d5-908e-79e34df55a3b",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -28632,13 +28986,16 @@
                 {
                     "name": "Regenerate Object Storage Keys",
                     "id": "dbc00ae8-5da1-462e-a055-f9a5f6e0e237",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -29207,13 +29564,16 @@
                 {
                     "name": "Get a private network",
                     "id": "114b148a-3803-401e-8edf-044249cbee21",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -29461,13 +29821,16 @@
                 {
                     "name": "Delete a private network",
                     "id": "90fd15d6-ad9f-4ed5-94a3-e333d6cbbab1",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -29715,13 +30078,16 @@
                 {
                     "name": "Update a Private Network",
                     "id": "6c846bb0-181c-43bd-9314-83866f5f5f02",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -30028,13 +30394,16 @@
                 {
                     "name": "List Private Networks",
                     "id": "6e515d85-870a-40f3-8f59-c9a61e32d610",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -30297,13 +30666,16 @@
                 {
                     "name": "Create a Private Network",
                     "id": "4b2ab834-174f-47c9-9b6b-4510a40b6f92",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -30524,13 +30896,16 @@
                 {
                     "name": "Get Reserved IP",
                     "id": "0181f19b-a0f7-48d2-993d-5ec7ef04ff76",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -30735,13 +31110,16 @@
                 {
                     "name": "Delete Reserved IP",
                     "id": "1263e145-ab94-4d57-9be1-a07cc8ba4dc2",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -30903,13 +31281,16 @@
                 {
                     "name": "List Reserved IPs",
                     "id": "5446286d-5d47-4373-8341-7b5fbb8ad0e8",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -31127,13 +31508,16 @@
                 {
                     "name": "Create Reserved IP",
                     "id": "05efc93e-9803-49db-a15c-94460cc74f81",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -31347,13 +31731,16 @@
                 {
                     "name": "Attach Reserved IP",
                     "id": "4c62f9ae-7bb9-4437-ac75-79925973fca3",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -31613,13 +32000,16 @@
                 {
                     "name": "Detach Reserved IP",
                     "id": "72daccdb-8666-47f5-afb9-6149f2d93012",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -31829,13 +32219,16 @@
                 {
                     "name": "Convert Instance IP to Reserved IP",
                     "id": "7949697a-ffd2-4a9b-a173-d8b3e76c7f78",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -32235,13 +32628,16 @@
                 {
                     "name": "Delete Snapshot",
                     "id": "b968da21-26cb-4a27-8c80-d3374eeb3c72",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -32446,13 +32842,16 @@
                 {
                     "name": "Get Snapshot",
                     "id": "8d2b2333-4244-4dd4-bbe0-5e6dd65fdbdd",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -32657,13 +33056,16 @@
                 {
                     "name": "Update Snapshot",
                     "id": "f0ea00e0-1e8c-417f-9890-93f07ac396d3",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -32970,13 +33372,16 @@
                 {
                     "name": "List Snapshots",
                     "id": "072dabf7-a761-4fab-8326-1a55909538a5",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -33104,13 +33509,16 @@
                 {
                     "name": "Create Snapshot",
                     "id": "4c8161f9-d503-4ad2-b01d-c0a9e238c81b",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -33280,13 +33688,16 @@
                 {
                     "name": "Create Snapshot from URL",
                     "id": "39029dcb-8de6-41ba-9c7e-facf5453c9c4",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -33512,13 +33923,16 @@
                 {
                     "name": "Get SSH Key",
                     "id": "e5af45dd-2c24-42ef-b579-fc3b6fc801e2",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -33723,13 +34137,16 @@
                 {
                     "name": "Update SSH Key",
                     "id": "5e7d0714-d17d-450e-a892-ed91ab896999",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -33984,13 +34401,16 @@
                 {
                     "name": "Delete SSH Key",
                     "id": "e925bfa1-17da-4352-975a-b0bf9fa52900",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -34195,13 +34615,16 @@
                 {
                     "name": "List SSH Keys",
                     "id": "eea6c402-3d6b-4f7f-8317-6a08b2f268e3",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -34329,13 +34752,16 @@
                 {
                     "name": "Create SSH key",
                     "id": "8021d4f5-3e58-46a0-ad07-73bba8702136",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -34512,13 +34938,16 @@
                 {
                     "name": "Get Startup Script",
                     "id": "7e49fc83-d379-47dc-b162-69263c6543ff",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -34723,13 +35152,16 @@
                 {
                     "name": "Delete Startup Script",
                     "id": "98bbf829-ceea-4578-ab36-f7084d23be3b",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -34934,13 +35366,16 @@
                 {
                     "name": "Update Startup Script",
                     "id": "1856db7a-d73d-471c-ab77-7873f7cc9293",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -35195,13 +35630,16 @@
                 {
                     "name": "List Startup Scripts",
                     "id": "5ea4a226-150e-4d87-a1cb-527deb4b8509",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -35329,13 +35767,16 @@
                 {
                     "name": "Create Startup Script",
                     "id": "336133b9-71b1-4b05-9ea5-c720c67af560",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -35556,13 +35997,16 @@
                 {
                     "name": "Get User",
                     "id": "7d1b0d23-e78f-40a6-b49e-4c246e8c3bf6",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -35767,13 +36211,16 @@
                 {
                     "name": "Delete User",
                     "id": "7671b76c-8365-47e7-939a-d5785dd04963",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -36021,13 +36468,16 @@
                 {
                     "name": "Update User",
                     "id": "32b2dcff-94cf-412d-8f9b-d9d0c3ae27aa",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -36334,13 +36784,16 @@
                 {
                     "name": "Get Users",
                     "id": "48f7d3c0-5160-47e4-b5cf-a9cfc66098ce",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -36558,13 +37011,16 @@
                 {
                     "name": "Create User",
                     "id": "1a23feb6-0b23-47ac-9e35-295790488893",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
                     "request": {
                         "auth": {
                             "type": "bearer",
                             "bearer": [
                                 {
                                     "key": "token",
-                                    "value": "<Bearer Token>",
+                                    "value": "{{bearer_token}}",
                                     "type": "string"
                                 }
                             ]
@@ -36785,17 +37241,16 @@
         "bearer": [
             {
                 "key": "token",
-                "value": "<Bearer Token>",
+                "value": "{{bearer_token}}",
                 "type": "string"
             }
         ]
     },
     "variable": [
         {
-            "id": "35b0f965-cdef-4b5c-9832-30b9f5654239",
+            "id": "0e01858b-b301-462c-8ae7-a873132485f7",
             "key": "baseUrl",
-            "value": "https://api.vultr.com/v2",
-            "type": "string"
+            "value": "https://api.vultr.com/v2"
         }
     ]
 }
