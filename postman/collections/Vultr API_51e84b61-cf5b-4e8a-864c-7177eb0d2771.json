@@ -37246,11 +37246,38 @@
             }
         ]
     },
+    "event": [
+        {
+            "listen": "prerequest",
+            "script": {
+                "id": "1fb1d6ce-eadf-4943-9292-1ee0234ace1e",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "d7f5c64c-783e-4f61-89b6-fc0d60876203",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
     "variable": [
         {
-            "id": "0e01858b-b301-462c-8ae7-a873132485f7",
+            "id": "578a2293-0dd3-43a4-8d65-4c588727fcc6",
             "key": "baseUrl",
             "value": "https://api.vultr.com/v2"
+        },
+        {
+            "id": "78dd3541-35f6-4f55-8b54-08832656102f",
+            "key": "bearer_token",
+            "value": ""
         }
     ]
 }
