@@ -4937,7 +4937,8 @@
                       "domains": [
                         {
                           "domain": "example.com",
-                          "date_created": "2020-10-10T01:56:20+00:00"
+                          "date_created": "2020-10-10T01:56:20+00:00",
+                          "dns_sec": "enabled"
                         }
                       ],
                       "meta": {
@@ -5021,7 +5022,8 @@
                     "value": {
                       "domain": {
                         "domain": "example.com",
-                        "date_created": "2020-10-10T01:56:20+00:00"
+                        "date_created": "2020-10-10T01:56:20+00:00",
+                        "dns_sec": "enabled"
                       }
                     }
                   }
@@ -5053,7 +5055,7 @@
                   },
                   "dns_sec": {
                     "type": "string",
-                    "description": "Enable or disable DSNSEC.\n\n* enabled\n* disabled (default)"
+                    "description": "Enable or disable DNSSEC.\n\n* enabled\n* disabled (default)"
                   }
                 },
                 "required": [
@@ -5117,7 +5119,8 @@
                     "value": {
                       "domain": {
                         "domain": "example.com",
-                        "date_created": "2020-10-10T01:56:20+00:00"
+                        "date_created": "2020-10-10T01:56:20+00:00",
+                        "dns_sec": "enabled"
                       }
                     }
                   }
@@ -5213,7 +5216,7 @@
                 "properties": {
                   "dns_sec": {
                     "type": "string",
-                    "description": "Enable or disable DSNSEC.\n\n* enabled\n* disabled"
+                    "description": "Enable or disable DNSSEC.\n\n* enabled\n* disabled"
                   }
                 },
                 "required": [
@@ -6545,17 +6548,8 @@
           }
         ],
         "responses": {
-          "202": {
-            "description": "Accepted",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {}
-                },
-                "examples": {}
-              }
-            }
+          "204": {
+            "description": "No Content"
           },
           "400": {
             "description": "Bad Request"
@@ -8629,6 +8623,7 @@
                           "label": "Example Instance",
                           "internal_ip": "",
                           "kvm": "https://my.vultr.com/subs/vps/novnc/api.php?data=00example11223344",
+                          "hostname": "my_hostname",
                           "tag": "Example Tag",
                           "os_id": 215,
                           "app_id": 0,
@@ -8725,7 +8720,7 @@
         "x-codeSamples": [
           {
             "lang": "Curl",
-            "source": "curl \"https://api.vultr.com/v2/instances\" \\\n  -X POST \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\" \\\n  -H \"Content-Type: application/json\" \\\n  --data '{\n    \"region\" : \"ewr\",\n    \"plan\" : \"vc2-6c-16gb\",\n    \"label\" : \"Example Instance\",\n    \"os_id\" : 215,\n    \"user_data\" : \"QmFzZTY0IEV4YW1wbGUgRGF0YQ==\",\n    \"backups\" : \"enabled\"\n  }'"
+            "source": "curl \"https://api.vultr.com/v2/instances\" \\\n  -X POST \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\" \\\n  -H \"Content-Type: application/json\" \\\n  --data '{\n    \"region\" : \"ewr\",\n    \"plan\" : \"vc2-6c-16gb\",\n    \"label\" : \"Example Instance\",\n    \"os_id\" : 215,\n    \"user_data\" : \"QmFzZTY0IEV4YW1wbGUgRGF0YQ==\",\n    \"backups\" : \"enabled\",\n    \"hostname\": \"my_hostname\"\n  }'"
           }
         ],
         "responses": {
@@ -8766,6 +8761,7 @@
                         "label": "",
                         "internal_ip": "",
                         "kvm": "",
+                        "hostname": "my_hostname",
                         "tag": "",
                         "os_id": 401,
                         "app_id": 0,
@@ -8913,7 +8909,8 @@
                     "label": "Example Instance",
                     "os_id": 215,
                     "user_data": "QmFzZTY0IEV4YW1wbGUgRGF0YQ==",
-                    "backups": "enabled"
+                    "backups": "enabled",
+                    "hostname": "my_hostname"
                   }
                 }
               }
@@ -8985,6 +8982,7 @@
                         "label": "Example Instance",
                         "internal_ip": "",
                         "kvm": "https://my.vultr.com/subs/vps/novnc/api.php?data=00example11223344",
+                        "hostname": "my_hostname",
                         "tag": "Example Tag",
                         "os_id": 215,
                         "app_id": 0,
@@ -9072,6 +9070,7 @@
                         "label": "Example Instance",
                         "internal_ip": "",
                         "kvm": "https://my.vultr.com/subs/vps/novnc/api.php?data=00example11223344",
+                        "hostname": "my_hostname",
                         "tag": "Example Tag",
                         "os_id": 215,
                         "app_id": 0,
@@ -9531,7 +9530,7 @@
         "x-codeSamples": [
           {
             "lang": "Curl",
-            "source": "curl \"https://api.vultr.com/v2/instances/{instance-id}/reinstall\" \\\n  -X POST \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\" \\\n  -H \"Content-Type: application/json\" \\\n  --data '{\n    \"hostname\" : \"Example Instance\"\n  }'"
+            "source": "curl \"https://api.vultr.com/v2/instances/{instance-id}/reinstall\" \\\n  -X POST \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\" \\\n  -H \"Content-Type: application/json\" \\\n  --data '{\n    \"hostname\" : \"my_new_hostname\"\n  }'"
           }
         ],
         "responses": {
@@ -9572,6 +9571,7 @@
                         "label": "Example Instance",
                         "internal_ip": "",
                         "kvm": "https://my.vultr.com/subs/vps/novnc/api.php?data=00example11223344",
+                        "hostname": "my_new_hostname",
                         "tag": "Example Tag",
                         "os_id": 215,
                         "app_id": 0,
@@ -9616,7 +9616,7 @@
               "examples": {
                 "request": {
                   "value": {
-                    "hostname": "Example Instance"
+                    "hostname": "my_new_hostname"
                   }
                 }
               }
@@ -13257,10 +13257,591 @@
         "description": "Get a list of supported Kubernetes versions",
         "security": []
       }
+    },
+    "/billing/history": {
+      "get": {
+        "summary": "List Billing History",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "billing_history": {
+                      "$ref": "#/components/schemas/billing"
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/meta"
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {
+                    "value": {
+                      "billing_history": [
+                        {
+                          "id": 123456,
+                          "date": "2020-10-10T01:56:20+00:00",
+                          "type": "invoice",
+                          "description": "Invoice #123456",
+                          "amount": 100.03,
+                          "balance": 79.48
+                        },
+                        {
+                          "id": 123457,
+                          "date": "2020-10-10T01:46:05+00:00",
+                          "type": "credit",
+                          "description": "Account Credit",
+                          "amount": 50.55,
+                          "balance": -20.55
+                        }
+                      ],
+                      "meta": {
+                        "total": 3,
+                        "links": {
+                          "next": "WxYzExampleNext",
+                          "prev": ""
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "billing": {
+                      "$ref": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "list-billing-history",
+        "description": "Retrieve list of billing history",
+        "security": [
+          {
+            "API Key": []
+          }
+        ],
+        "tags": [
+          "billing"
+        ],
+        "x-codeSamples": [
+          {
+            "lang": "Curl",
+            "source": "curl \"https://api.vultr.com/v2/billing/history\" \\\n  -X GET \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\""
+          }
+        ]
+      },
+      "parameters": []
+    },
+    "/billing/invoices": {
+      "get": {
+        "summary": "List Invoices",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "billing_invoice": [
+                        {
+                          "id": 123456,
+                          "billing_period": "09-01-2021",
+                          "amount": 5
+                        }
+                      ]
+                    }
+                  },
+                  "properties": {
+                    "billing_invoices": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/invoice"
+                      }
+                    },
+                    "meta": {
+                      "$ref": "#/components/schemas/meta"
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {
+                    "value": {
+                      "billing_invoices": [
+                        {
+                          "id": 123456,
+                          "date": "2021-10-10T00:00:00+00:00",
+                          "description": "Invoice #123456",
+                          "amount": 5.25,
+                          "balance": 10.25
+                        }
+                      ],
+                      "meta": {
+                        "total": 1,
+                        "links": {
+                          "next": "",
+                          "prev": ""
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "invoice": {
+                      "$ref": ""
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {
+                    "billing_history": null
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "list-invoices",
+        "description": "Retrieve full specified invoice",
+        "security": [
+          {
+            "API Key": []
+          }
+        ],
+        "tags": [
+          "billing"
+        ],
+        "x-codeSamples": [
+          {
+            "lang": "Curl",
+            "source": "curl \"https://api.vultr.com/v2/billing/invoices/{invoice-id}\" \\\n  -X GET \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\""
+          }
+        ]
+      },
+      "parameters": []
+    },
+    "/billing/invoices/{invoice-id}": {
+      "get": {
+        "summary": "Get Invoice",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "billing_invoice": {
+                        "id": 123456,
+                        "description": "Account Credit",
+                        "billing_period": "09-01-2021",
+                        "amount": 5
+                      }
+                    }
+                  },
+                  "properties": {
+                    "billing_invoice": {
+                      "$ref": "#/components/schemas/invoice"
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {
+                    "value": {
+                      "billing_invoice": {
+                        "id": 123456,
+                        "description": "Account Credit",
+                        "date": "09-01-2021T00:00:00+00:00",
+                        "amount": 5.25
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "invoice": {
+                      "$ref": ""
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {
+                    "billing_history": null
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-invoice",
+        "description": "Retrieve specified invoice",
+        "security": [
+          {
+            "API Key": []
+          }
+        ],
+        "tags": [
+          "billing"
+        ],
+        "x-codeSamples": [
+          {
+            "lang": "Curl",
+            "source": "curl \"https://api.vultr.com/v2/billing/invoices/{invoice-id}\" \\\n  -X GET \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\""
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "invoice-id",
+          "in": "path",
+          "required": true
+        }
+      ]
+    },
+    "/billing/invoices/{invoice-id}/items": {
+      "get": {
+        "summary": "Get Invoice Items",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "x-examples": {
+                    "example-1": {
+                      "invoice_items": [
+                        {
+                          "description": "Load Balancer (my-loadbalancer)",
+                          "product": "Load Balancer",
+                          "start_date": "2021-08-31 20:00:00",
+                          "end_date": "2021-09-30 20:00:00",
+                          "units": 720,
+                          "unit_type": "hours",
+                          "unit_price": 0.0149,
+                          "total": 10
+                        },
+                        {
+                          "description": "1.1.1.1 (8192 MB) [my-instance]",
+                          "product": "Vultr Cloud Compute",
+                          "start_date": "2021-09-15 09:13:15",
+                          "end_date": "2021-09-30 20:00:00",
+                          "units": 371,
+                          "unit_type": "hours",
+                          "unit_price": 0.0595,
+                          "total": 22.09
+                        }
+                      ],
+                      "meta": {
+                        "total": 3,
+                        "links": {
+                          "next": "WxYzExampleNext",
+                          "prev": ""
+                        }
+                      }
+                    }
+                  },
+                  "properties": {
+                    "invoice_items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "description": {
+                            "type": "string",
+                            "description": "Invoice item description"
+                          },
+                          "product": {
+                            "type": "string",
+                            "description": "Product name"
+                          },
+                          "start_date": {
+                            "type": "string",
+                            "description": "Start date of item"
+                          },
+                          "end_date": {
+                            "type": "string",
+                            "description": "End date of item"
+                          },
+                          "units": {
+                            "type": "number",
+                            "description": "Number of units item consumed in billing period"
+                          },
+                          "unit_type": {
+                            "type": "string",
+                            "description": "Unit type. Options include \"hours\", \"overage\", and \"discount\""
+                          },
+                          "unit_price": {
+                            "type": "number",
+                            "description": "Price per unit in dollars"
+                          },
+                          "total": {
+                            "type": "number",
+                            "description": "Total amount due in dollars"
+                          }
+                        }
+                      }
+                    },
+                    "meta": {
+                      "type": "object",
+                      "properties": {
+                        "total": {
+                          "type": "number"
+                        },
+                        "links": {
+                          "type": "object",
+                          "properties": {
+                            "next": {
+                              "type": "string"
+                            },
+                            "prev": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {
+                    "value": {
+                      "invoice_items": [
+                        {
+                          "description": "Load Balancer (my-loadbalancer)",
+                          "product": "Load Balancer",
+                          "start_date": "2021-08-31T00:00:00+00:00",
+                          "end_date": "2021-09-30T00:00:00+00:00",
+                          "units": 720,
+                          "unit_type": "hours",
+                          "unit_price": 0.0149,
+                          "total": 10
+                        },
+                        {
+                          "description": "1.1.1.1 (8192 MB) [my-instance]",
+                          "product": "Vultr Cloud Compute",
+                          "start_date": "2021-09-15T00:00:00+00:00",
+                          "end_date": "2021-09-30T00:00:00+00:00",
+                          "units": 371,
+                          "unit_type": "hours",
+                          "unit_price": 0.0595,
+                          "total": 22.09
+                        }
+                      ],
+                      "meta": {
+                        "total": 3,
+                        "links": {
+                          "next": "WxYzExampleNext",
+                          "prev": ""
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "invoice": {
+                      "$ref": ""
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {
+                    "billing_history": null
+                  }
+                }
+              }
+            }
+          }
+        },
+        "operationId": "get-invoice-items",
+        "description": "Retrieve full specified invoice",
+        "security": [
+          {
+            "API Key": []
+          }
+        ],
+        "tags": [
+          "billing"
+        ],
+        "x-codeSamples": [
+          {
+            "lang": "Curl",
+            "source": "curl \"https://api.vultr.com/v2/billing/invoices/{invoice-id}/items\" \\\n  -X GET \\\n  -H \"Authorization: Bearer ${VULTR_API_KEY}\""
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "invoice-id",
+          "in": "path",
+          "required": true
+        }
+      ]
     }
   },
   "components": {
     "schemas": {
+      "billing": {
+        "description": "",
+        "type": "object",
+        "x-examples": {
+          "example-1": {
+            "id": 123456,
+            "date": "2020-10-10T01:56:20+00:00",
+            "type": "invoice",
+            "description": "Invoice #123456",
+            "amount": 100.25,
+            "balance": 100.25
+          }
+        },
+        "x-tags": [
+          "billing"
+        ],
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "ID of the billing history item"
+          },
+          "date": {
+            "type": "string",
+            "description": "Date billing history item was generated"
+          },
+          "type": {
+            "type": "string",
+            "description": "Type of billing history item"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of billing history item"
+          },
+          "amount": {
+            "type": "number",
+            "description": "Amount for the billing history item in dollars"
+          },
+          "balance": {
+            "type": "number",
+            "description": "The accounts balance in dollars"
+          }
+        }
+      },
+      "invoice": {
+        "title": "invoice",
+        "type": "object",
+        "x-examples": {
+          "example-1": {
+            "id": 123456,
+            "date": "2021-11-02T00:48:13+00:00",
+            "description": "Invoice #132456",
+            "amount": 0.25,
+            "balance": -197.88
+          }
+        },
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "ID of the invoice"
+          },
+          "date": {
+            "type": "string",
+            "description": "Date invoice was generated"
+          },
+          "description": {
+            "type": "string",
+            "description": "description of item"
+          },
+          "amount": {
+            "type": "number",
+            "description": "Amount due in dollars"
+          },
+          "balance": {
+            "type": "number",
+            "description": "Account balance amount in dollars"
+          }
+        }
+      },
       "vke-cluster": {
         "title": "vke-cluster",
         "type": "object",
@@ -14303,6 +14884,10 @@
           "date_created": {
             "type": "string",
             "description": "Date the DNS Domain was created."
+          },
+          "dns_sec": {
+            "type": "string",
+            "description": "The domain's DNSSEC status\n\n* enabled\n* disabled"
           }
         }
       },
@@ -15091,6 +15676,10 @@
               }
             }
           },
+          "hostname": {
+            "type": "string",
+            "description": "The hostname for this instance."
+          },
           "label": {
             "type": "string",
             "description": "The user-supplied label for this instance."
@@ -15333,6 +15922,11 @@
       "name": "baremetal",
       "x-displayName": "Bare Metal",
       "description": "[Bare Metal](https://www.vultr.com/products/bare-metal/) servers give you access to the underlying physical hardware in a single-tenant environment without a virtualization layer.\n"
+    },
+    {
+      "name": "billing",
+      "x-displayName": "Billing",
+      "description": "Read-only [billing](https://my.vultr.com/billing/#billinghistory) information for your [user account](https://my.vultr.com/settings/#settingsprofile)."
     },
     {
       "name": "block",
